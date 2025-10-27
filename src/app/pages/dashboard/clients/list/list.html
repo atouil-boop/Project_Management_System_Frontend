@@ -1,0 +1,86 @@
+          <app-breadcrumb [url]="'/dashboard/clients/add'" [title]="'Clients'" ></app-breadcrumb>
+                    
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table align-middle table-nowrap table-hover">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th scope="col" style="width: 70px;">#</th>
+                                                    <th scope="col">Fullname</th>
+                                                    <th scope="col">Email</th>
+                                                    <th scope="col">Tel</th>
+                                                    <th scope="col">Address</th>
+                                                    <th scope="col">Action</th>
+                                                </tr>
+                                            </thead>
+                                            
+                                            <tbody>
+<!-- <tr *ngFor="let item of table; trackBy: trackById">
+    <td>
+      <div class="avatar-xs">
+        <img style="width: 50px;" [src]="'http://127.0.0.1:3000/contactimages/' + item.image" alt="">
+      </div>
+    </td>
+    <td>
+      <h5 class="font-size-14 mb-1"><a class="text-dark">{{ item.fullname }}</a></h5>
+    </td>
+    <td>{{ item.email }}</td>
+    <td>{{ item.tel }}</td>
+    <td>{{ item.address }}</td>
+    <td>
+      <ul class="list-inline font-size-20 contact-links mb-0">
+        <li class="list-inline-item px-2">
+          <a title="Edit" [routerLink]="['/dashboard/clients/update', item._id]">
+            <i class="bx bx-pencil"></i>
+          </a>
+        </li>
+        <li class="list-inline-item px-2">
+          <a title="Delete">
+            <i class="bx bx-trash"></i>
+          </a>
+        </li>
+      </ul>
+    </td>
+  </tr> -->
+                                                 @for(item of table; track item._id){
+                                                    <tr>
+                                                        <td>
+                                                            <div class="avatar-xs">
+                                                                <img style="width: 50px;" [src]=" imageUrl + item.image" alt="">
+                                                            </div> 
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="font-size-14 mb-1"><a class="text-dark"> {{item.fullname}} </a></h5>
+                                                            
+                                                        </td>
+                                                        <td> {{item.email}} </td>
+                                                        <td> {{item.tel}} </td>
+                                                        <td> {{item.address}}</td>
+                                                       
+                                                   
+                                                        <td>
+                                                            <ul class="list-inline font-size-20 contact-links mb-0">
+                                                                <li class="list-inline-item px-2">
+                                                                    <a title="Message" [routerLink]="['/dashboard/clients/update/',item._id]"><i
+                                                                            class="bx bx-pencil"></i></a>
+                                                                </li>
+                                                                <li (click)="delete(item._id)" class="list-inline-item px-2">
+                                                                    <a   title="Profile" style="cursor:pointer;"><i
+                                                                            class="bx bx-trash"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                } 
+                                            </tbody>
+                                            
+                                        </table>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
