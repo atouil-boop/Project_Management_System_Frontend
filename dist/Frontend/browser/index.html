@@ -3,33 +3,42 @@
 <head>
   <meta charset="utf-8">
   <title>Frontend</title>
+  <!-- Base href doit pointer vers la racine du site -->
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <!-- Bootstrap Css -->
-    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css">
-    <!-- Icons Css -->
-    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
-    <!-- App Css-->
-    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css">
 
-<link rel="stylesheet" href="styles-5INURTSO.css"></head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Assets CSS, chemins relatifs au build -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/app.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Angular styles -->
+  <link rel="stylesheet" href="styles-5INURTSO.css">
+</head>
 <body data-sidebar="dark">
   <app-root></app-root>
-  <!-- JAVASCRIPT -->
-    <script src="assets/libs/jquery/jquery.min.js"></script>
-    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
-    <script src="assets/libs/simplebar/simplebar.min.js"></script>
-    <script src="assets/libs/node-waves/waves.min.js"></script>
 
-    <!-- apexcharts -->
-    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+  <!-- JS libs -->
+  <script src="assets/libs/jquery/jquery.min.js"></script>
+  <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+  <script src="assets/libs/simplebar/simplebar.min.js"></script>
+  <script src="assets/libs/node-waves/waves.min.js"></script>
 
-    <!-- dashboard init -->
-    <script src="assets/js/pages/dashboard.init.js"></script>
+  <!-- ApexCharts -->
+  <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
 
-    <!-- App js -->
-    <script src="assets/js/app.js"></script>
-<script src="polyfills-5CFQRCPP.js" type="module"></script><script src="main-Z5BG3RGN.js" type="module"></script></body>
+  <!-- Dashboard init -->
+  <script src="assets/js/pages/dashboard.init.js"></script>
+
+  <!-- App JS -->
+  <script src="assets/js/app.js"></script>
+
+  <!-- Angular bundle -->
+  <script src="polyfills-5CFQRCPP.js" type="module"></script>
+  <script src="main-Z5BG3RGN.js" type="module"></script>
+</body>
 </html>
